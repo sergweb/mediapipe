@@ -68,7 +68,8 @@ cc_library(
 cc_library(
     name = "iris_tracking_gpu_deps",
     deps = [
-        "//mediapipe/calculators/core:constant_side_packet_calculator",
+	"//mediapipe/calculators/core:packet_presence_calculator",
+	"//mediapipe/calculators/core:constant_side_packet_calculator",
         "//mediapipe/calculators/core:flow_limiter_calculator",
         "//mediapipe/calculators/core:split_vector_calculator",
         "//mediapipe/graphs/iris_tracking/calculators:update_face_landmarks_calculator",
